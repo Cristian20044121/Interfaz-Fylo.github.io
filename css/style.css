@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');   /*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');  /*font-family: 'Raleway', sans-serif;*/
+
+
+
+:root{
+    --background-body: #ffffff;
+    --color-title: #06033a;
+    --color-paragraph: #1a1737;
+    --background-button: #2b67fb;
+    --background-button-hover: #6b9bff;
+    --color-link: #51ad9c;
+    --background-section-acces: #575989;
+    --color-section-acces: #eae8f7;
+    --background-footer: #07043b;
+    --typography: font-family: font-family: 'Raleway', sans-serif;
+}
+
+
+body{
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 50px auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 26%;
+}
+nav a{
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: var(--typography);
+    text-decoration: none;
+    margin: 40px;
+}
+nav a:hover{
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+.presentation{
+    font-family: var(--typography);
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.presentation div:nth-child(1) {
+    font-size: 15px;
+    border-radius: 3px;
+    margin: 30px;
+    width: 50%;
+}
+.presentation div>p{
+    font-size: 23px;
+}
+.presentation div>div{
+    margin: 0 auto;
+}
+.presentation div>div>button{
+    background-color: var(--background-button);
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    height: 50px;
+    margin-left: 15px;
+    width: 30%;
+}
+.presentation div>div>button:hover{
+    background-color: var(--background-button-hover);
+    cursor: pointer;
+}
+.presentation div>div>input{
+    width: 55%;
+    padding: 10px;
+    border-radius: 3px;
+    height: 26px;
+    border:2px solid  #8c8a97;
+}
+.presentation div>h1:nth-child(1){
+    color:var(--color-title);
+    font-size: 50px;
+}
+
+.presentation>img{
+    margin-left: 100px;
+    height: 600px;
+    width: 90%; 
+}
+
+/* section information  */
+
+.information{
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin-top: 300px;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+}
+.information > img{
+    width: 50%;
+    height: 600px;
+    margin-left: 200px;
+}
+.info-productive{
+    width: 35%;
+}
+.info-productive h2 {
+    color:var(--color-title);
+    font-size: 50px;
+}
+.info-productive p {
+    font-size: 23px;
+    color: var(--color-paragraph);
+    font-weight: bold;
+}
+.info-productive a{
+    color: var(--color-link);
+    font-weight: bold;
+    font-size: 20px;
+}
+.info-productive a > img {
+    width: 20px;
+    height: 20px;
+}
+
+.testimony{
+    margin-top: 40px;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: -1px -1px 5px 8px #f4f3f7;
+}
+.testimony >img{
+    height: 20px;
+    width: 20px;
+}
+.testimony > p{
+    font-size: 18px;
+}
+
+.info-coment-person{
+    display: flex;
+    align-items: flex-start;
+}
+.info-coment-person > img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.info-coment-person div{
+    margin-left: 10px;
+    width: 40%;
+}
+
+.info-coment-person div>h2{
+    color: var(--color-title);
+    font-size: 20px;
+    font-family: var(--typography);
+    font-weight: 900;
+}
+.info-coment-person div>p{
+    font-size: 15px;
+    color: var(--color-paragraph);
+    margin-bottom: 6px;
+}
+
+
+/* section acces  */
+
+
+.acces{
+    background-color: var(--background-section-acces);
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.acces-info{
+    width: 27%;
+}
+
+.acces-info h2{
+    color: #ffffff;
+    font-family: var(--typography);
+    font-size: 30px;
+}
+.acces-info p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.acces-inputs{
+    width: 40%;
+}
+
+.acces-inputs input{
+    width: 55%;
+    padding: 10px;
+    border-radius: 3px;
+    height: 26px;
+    border:2px solid  #8c8a97;
+}
+
+.acces-inputs button{
+    background-color: var(--background-button);
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    height: 50px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.acces-inputs button:hover{
+    background-color: var(--background-button-hover);
+    cursor: pointer;
+}
+/* footer  */
+
+
+footer{
+    background-color: var(--background-footer);
+    padding: 100px;
+}
+footer > img{
+    color: white;
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.info-footer a:hover{
+    color: #394f8f;
+}
+.contact{
+    color: #ffffff;
+}
+.contact a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.buttons-info a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.socials{
+    display: flex;
+}
+.socials a>img{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+.socials a>img:hover{
+    border-radius: 50%;
+    box-shadow: -1px -1px 5px 8px #394f8f;
+}
+.socials a{
+    margin: 10px;
+}
+
+/* destock */
+@media screen and (max-width: 768px) {
+   header{
+    width: 100%;
+    justify-content: space-between;
+   }
+   nav{
+    width: 100%;
+    margin-left: 90px;
+   }
+   nav a{
+    font-size: 18px;
+    margin: 35px;
+   }
+   /* presentation  */
+   .presentation{
+    width: 140%;
+    height: 70%;
+    flex-direction: column-reverse;
+    justify-content: center;
+   }
+   .presentation div:nth-child(1) {
+    width: 95%;
+    text-align: center;
+    }
+   .presentation div>h1:nth-child(1){
+    font-size:40px;
+   }
+   .presentation > img{
+    width: 90%;
+    height: 400px;
+    margin-left: 40px;
+   }
+   .presentation div>div{
+    display: flex;
+    flex-direction: column;
+   }
+   .presentation div>div>input{
+    width: 96%;
+   }
+   
+    .presentation div>div>button{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    /* information  */
+
+    .information{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 110px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+    .information > img{
+        width: 90%;
+        height: 400px;
+        margin-left: 40px;
+    }
+    .info-productive{
+        width: 100%;
+    }
+    .info-productive h2 {
+        font-size: 23px;
+    }
+    .info-productive p{
+        font-size: 18px;
+    }
+    .info-productive a{
+        margin-left: 70px;
+    }
+
+    .testimony{
+        width: 100%;
+    }
+    .testimony >img{
+        height: 5px;
+        width: 5px;
+    }
+    .testimony > p{
+        font-size: 11px;
+    }
+
+    .acces{
+        padding: 110px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .acces-info{
+        width: 80%;
+        text-align: center;
+    }
+    .acces-inputs{
+        width: 100%;
+        text-align: center;
+    }
+    .acces-input{
+        width: 100%;
+    }
+    .acces-inputs button{
+        width: 62%;
+    }
+
+    /* footer  */
+
+    footer{
+        width: 100%;
+        padding: 110px;
+    }
+    .info-footer{
+        flex-direction: column;
+    }
+    .contact{
+        margin-top: 30px;
+    }
+    .buttons-info{
+        margin: 10px;
+    }
+    .socials {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    nav{
+        width: 80%;
+        margin-left: 200px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    .presentation{
+        width: 100%;
+    }
+    .presentation div:nth-child(1) {
+        width: 60%;
+        padding: 5px;
+    }
+    .presentation div> p{
+        font-size: 22px;
+    }
+    .presentation div>h1:nth-child(1){
+        font-size: 35px;
+    }
+
+    .presentation > img{
+        width: 500px;
+        height: 600px;
+    }
+
+    /* information  */
+    .information > img{
+        width: 25%;
+        height: 300px;
+        margin-left: 100px;
+    }
+    .info-productive{
+        width: 60%;
+    }
+    .info-productive h2 {
+        font-size: 40px;
+    }
+    .info-productive p {
+        font-size: 20px;
+    }
+    .testimony > p{
+        font-size: 16px;
+    }
+
+    /* section acces  */
+    .acces-info{
+        width:40%;
+    }
+    .acces-inputs{
+        width: 40%;
+    }
+    .acces-inputs input{
+        width: 100%;
+    }
+    .acces-inputs button{
+        width: 50%;
+    }
+
+}
